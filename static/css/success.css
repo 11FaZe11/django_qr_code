@@ -1,0 +1,35 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    margin: 20px 0;
+}
+
+img {
+    display: block;
+    max-width: 200px;
+    margin: 20px auto; /* Center the image */
+}
+
+a {
+    color: #bb86fc; /* Purple color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    display: block;
+    margin-top: 20px;
+}

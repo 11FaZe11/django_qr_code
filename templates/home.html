@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a target="_blank" href="/auth/login/">Login</a></li>
+            <li><a target="_blank" href="/auth/signup/">Signup</a></li>
+            <li><a target="_blank" href="#about">About</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our website. Here you can find information about our services.</p>
+    </section>
+</body>
+</html>

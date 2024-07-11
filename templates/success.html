@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/success.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+</head>
+<body>
+    {% csrf_token %}
+    <h2>Welcome to the app {{ request.user }}</h2>
+    <p>Your account has been created successfully</p>
+    <!-- Display QR Code -->
+    <img src="{{ qr_code_path }}" alt="User QR Code">
+    <!-- Download QR Code -->
+    <a href="{{ qr_code_path }}" download="YourQRCode.png">Download Your QR Code</a>
+    <a href="/">Go to Home Page</a>
+    <br>
+    <span> <a href="{% url 'logout' %}">logout</a> </span>
+</body>
+</html>

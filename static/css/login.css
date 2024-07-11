@@ -1,0 +1,33 @@
+/* dark_theme.css */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+a {
+    color: #bb86fc; /* Light purple for links */
+}
+
+input, select, button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+input[type="submit"], button {
+    background-color: #6200ee; /* A shade of purple */
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+    width: calc(100% - 22px); /* Full width minus padding */
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+}
+
+/* Add more styles as needed */
